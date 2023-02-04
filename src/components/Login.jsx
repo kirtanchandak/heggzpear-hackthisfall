@@ -42,10 +42,10 @@ function Login() {
               <h1 className="mb-8 text-3xl text-center font-semibold">
                 Welcome Back
               </h1>
-              <div className="flex space-x-2 p-2 shadow-md px-5 border rounded my-4 items-center">
+              <div className="flex space-x-2 p-2 shadow-md px-5 border rounded my-4 items-center cursor-pointer hover:shadow-lg">
                 <Google className="text-xl" />
                 <h2
-                  className="text-lg font-medium text-gray-600 cursor-pointer"
+                  className="text-lg font-medium text-gray-600 "
                   onClick={(e) => googleAuth(e)}
                 >
                   Sign In with Google

@@ -55,10 +55,10 @@ function SignUp() {
             <h1 className="mb-8 text-3xl text-center font-semibold">
               Create Your Account
             </h1>
-            <div className="flex w-full space-x-2 p-2 shadow-md px-5 border rounded my-4 items-center">
+            <div className="flex w-full space-x-2 p-2 shadow-md px-5 border rounded my-4 items-center cursor-pointer hover:shadow-lg">
               <Google className="text-xl" />
               <h2
-                className="text-lg font-medium text-gray-600 cursor-pointer "
+                className="text-lg font-medium text-gray-600  "
                 onClick={(e) => googleAuth(e)}
               >
                 Sign Up with Google
@@ -130,7 +130,7 @@ function SignUp() {
             <div className="w-full my-4 flex justify-between">
               <h2>Already have account?</h2>
               <Link
-                to="/"
+                to="/login"
                 className="flex text-lg font-medium text-blue-700 items-center space-x-2"
               >
                 <h2>Sign In</h2>
