@@ -10,6 +10,10 @@ import { Logout } from "../icons/Logout";
 import { Right } from "../icons/Right";
 
 function Login() {
+  const googleAuth = (e) => {
+    e.preventDefault();
+    account.createOAuth2Session("google", "http://localhost:3000/dashboard");
+  };
   const navigate = useNavigate();
   const [user, setUser] = useState({
     email: "",
@@ -40,7 +44,10 @@ function Login() {
               </h1>
               <div className="flex space-x-2 p-2 shadow-md px-5 border rounded my-4 items-center">
                 <Google className="text-xl" />
-                <h2 className="text-lg font-medium text-gray-600">
+                <h2
+                  className="text-lg font-medium text-gray-600 cursor-pointer"
+                  onClick={(e) => googleAuth(e)}
+                >
                   Sign In with Google
                 </h2>
               </div>
