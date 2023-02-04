@@ -47,10 +47,6 @@ function SignUp() {
     <>
       <div className="bg-primary-500 flex flex-col lg:flex-row  h-full lg:h-screen p-3">
         <div className=" w-full lg:w-1/2 bg-grey-lighter flex rounded flex-col order-2 lg:order-1 bg-white">
-          <div className="flex justify-start space-x-2 p-3 items-center">
-            <div className="bg-primary-500 h-9 w-9 rounded-full"></div>
-            <h2 className="text-xl font-bold font-Caveat">Ayurveda</h2>
-          </div>
           <div className=" w-full lg:w-4/6 mx-auto flex-1 flex flex-col items-center justify-center px-5">
             <h1 className="mb-8 text-3xl text-center font-semibold">
               Create Your Account
