@@ -5,6 +5,7 @@ import React from "react";
 import { useEffect } from "react";
 import Login from "./Login";
 import { getQuery } from "../Services/Queries";
+import { FormModal } from "./dashboard/FormModal.jsx";
 
 function Dashboard() {
   const navigate = useNavigate();
@@ -40,6 +41,7 @@ function Dashboard() {
     <>
       {userDetails ? (
         <div>
+          <FormModal />
           <button
             data-drawer-target="default-sidebar"
             data-drawer-toggle="default-sidebar"
