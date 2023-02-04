@@ -3,7 +3,6 @@ import { useState } from "react";
 import React from "react";
 import { useEffect } from "react";
 import Login from "./Login";
-import { getQuery } from "../Services/Queries";
 import { FormModal } from "./dashboard/FormModal.jsx";
 import { Link, Nav, useNavigate } from "react-router-dom";
 import { MdiDashboard } from "../icons/MdiDashboard";
@@ -14,12 +13,6 @@ import { MdiProfile } from "../icons/MdiProfile";
 function Dashboard() {
   const navigate = useNavigate();
   const [userDetails, setuserDetails] = useState();
-  console.log(
-    getQuery().then((res) => {
-      console.log(res);
-    }),
-    "dsfs"
-  );
   useEffect(() => {
     const getData = account.get();
     getData.then(
@@ -51,11 +44,11 @@ function Dashboard() {
             data-drawer-toggle="default-sidebar"
             aria-controls="default-sidebar"
             type="button"
-            class="inline-flex items-center p-2 mt-2 ml-3 text-sm bg-primary-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            className="inline-flex items-center p-2 mt-2 ml-3 text-sm bg-primary-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
           >
-            <span class="sr-only">Open sidebar</span>
+            <span className="sr-only">Open sidebar</span>
             <svg
-              class="w-6 h-6"
+              className="w-6 h-6"
               aria-hidden="true"
               fill="currentColor"
               viewBox="0 0 20 20"
@@ -71,11 +64,11 @@ function Dashboard() {
 
           <aside
             id="default-sidebar"
-            class="fixed top-0 left-0 z-40 w-52 h-screen transition-transform -translate-x-full sm:translate-x-0"
+            className="fixed top-0 left-0 z-40 w-52 h-screen transition-transform -translate-x-full sm:translate-x-0"
             aria-label="Sidebar"
           >
-            <div class="h-full px-5 py-4 overflow-y-auto bg-primary-500">
-              <ul class="space-y-2">
+            <div className="h-full px-5 py-4 overflow-y-auto bg-primary-500">
+              <ul className="space-y-2">
                 <li>
                   <Link
                     to="/dashboard"

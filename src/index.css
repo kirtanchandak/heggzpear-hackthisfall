@@ -11,6 +11,10 @@ body {
 .is-active{
 @apply bg-white text-primary-500
 }
+.invalid-feedback{
+  @apply text-red-500 text-xs
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
