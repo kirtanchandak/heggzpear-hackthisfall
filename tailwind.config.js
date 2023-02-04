@@ -1,3 +1,5 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
@@ -62,6 +64,14 @@ module.exports = {
         other: {},
       },
     },
+    fontFamily: {
+      display: ["Plus Jakarta Sans", ...defaultTheme.fontFamily.sans],
+      body: ["Plus Jakarta Sans', sans-serif", ...defaultTheme.fontFamily.sans],
+    },
+    fontFamily: {
+      'Caveat': ['Caveat', 'cursive', ]
+    },
+
   },
   plugins: [],
 }
