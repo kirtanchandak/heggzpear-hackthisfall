@@ -55,11 +55,6 @@ export default function Header() {
             followed by a special diet, herbal remedies, massage therapy, yoga,
             and meditation.
           </p>
-          <p>
-            Ayurveda treatment starts with an internal purification process,
-            followed by a special diet, herbal remedies, massage therapy, yoga,
-            and meditation.
-          </p>
         </div>
         <Button
           label="Read More"
