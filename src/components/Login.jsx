@@ -28,13 +28,13 @@ function Login() {
   };
   return (
     <>
-    <div className="bg-primary-500 flex h-screen p-3">
-      <div className="w-1/2 bg-grey-lighter flex rounded flex-col  bg-white">
+    <div className="bg-primary-500 flex flex-col lg:flex-row  h-full lg:h-screen p-3">
+      <div className=" w-full lg:w-1/2 bg-grey-lighter flex rounded flex-col order-2 lg:order-1 bg-white">
         <div className="flex justify-start space-x-2 p-3 items-center">
           <div className="bg-primary-500 h-9 w-9 rounded-full"></div>
           <h2 className="text-xl font-bold font-Caveat">Ayurveda</h2>
         </div>
-        <div class="container w-4/6 mx-auto flex-1 flex flex-col items-center justify-center px-2">
+        <div class="container w-full lg:w-4/6 mx-auto flex-1 flex flex-col items-center justify-center px-2">
           <div class="bg-white px-6 py-8 rounded text-black w-full">
             <h1 class="mb-8 text-3xl text-center font-semibold">Welcome Back</h1>
             <div className="flex space-x-2 p-2 shadow-md px-5 border rounded my-4 items-center">
@@ -67,7 +67,7 @@ function Login() {
             <input
               type="password"
               id="password"
-              className="outline-none bg-transparent"
+              className="outline-none w-full bg-transparent"
               name="password"
               placeholder="Password"
               onChange={(e) => {
@@ -86,19 +86,18 @@ function Login() {
               <h2>Login</h2>
               <Logout class="text-2xl"/>
             </button>
-              <div className=" my-4 flex justify-between">
+              <div className=" my-4 flex w-full justify-between">
                 <h2>Don't have account?</h2>
                 <a href="/signup" className="flex text-lg font-medium text-blue-700 items-center space-x-2">
                   <h2>Register</h2>
                   <Right class="text-lg"/>
                 </a>
               </div>
-            
           </div>
         </div>
       </div>
-      <div className="w-1/2 flex items-center justify-center">
-              <img src={logo} className="w-80"/>
+      <div className=" w-full lg:w-1/2 order-1 flex items-center lg:order-2 justify-center">
+              <img src={logo} className=" w-48 my-5 lg:w-80"/>
       </div>
     </div>
     </>
