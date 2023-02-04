@@ -2,9 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.svg";
 import consultImg from "../../assets/consult-img.jpg";
-import {Instagram} from "../../icons/Instagram"
-import {Facebook} from "../../icons/Facebook"
-import {Twitter} from "../../icons/Twitter"
+import { Instagram } from "../../icons/Instagram";
+import { Facebook } from "../../icons/Facebook";
+import { Twitter } from "../../icons/Twitter";
+import Button from "../Button";
+import Title from "../Title";
 
 export default function Header() {
   return (
@@ -15,25 +17,24 @@ export default function Header() {
         </div>
         <div className="w-full md:w-1/2">
           <div className="md:p-14">
-            <h2 className="font-semibold text-2xl md:text-4xl my-2">
+            <h1 className="font-semibold text-2xl md:text-4xl my-2">
               Lorem Ipsum
-            </h2>
+            </h1>
             <p className="text-justify text-base md:text-lg text-gray-600">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
               type and scrambled it to make a type specimen book.
             </p>
-            <button className="bg-primary-500 text-white my-3 p-2 px-9 hover:bg-primary-600 duration-300 rounded">
-              Login
-            </button>
+            <Button
+              label="Login"
+              style="bg-primary-500 text-white hover:bg-primary-600"
+            />
           </div>
         </div>
       </div>
       <div className="ayurveda p-5 px-5 md:px-20">
-        <h2 className="text-2xl md:text-4xl font-semibold my-5">
-          What is Ayurveda ?
-        </h2>
+        <Title title="What is Ayurveda?" className="my-5" />
         <div className="space-y-3 text-justify md:text-base text-gray-600">
           <p>
             Ayurveda, a natural system of medicine, originated in India more
@@ -66,19 +67,18 @@ export default function Header() {
             and meditation.
           </p>
         </div>
-        <button className="text-primary-500 border-2 p-2 px-4 hover:bg-primary-500 duration-300 hover:text-white my-3 rounded border-primary-500">
-          Read More
-        </button>
+        <Button
+          label="Read More"
+          style="text-primary-500 border-2 p-2 px-4 border-primary-500 hover:bg-primary-500 hover:text-white"
+        />
       </div>
-      <div className="consultation  my-5 px-5 md:px-20">
-        <h2 className="text-2xl md:text-4xl font-semibold my-5">
-          Free Online Consultations
-        </h2>
+      <div className="consultation my-5 px-5 md:px-20">
+        <Title title="Free Online Consultations" className="my-5" />
         <div className="flex flex-col md:flex-row">
           <div className="w-full md:w-1/2">
             <img src={consultImg} className="" alt="doctor_img" />
           </div>
-          <div className="w-full md:w-1/2 md:text-lg md:px-5 md:y-2 text-gray-600">
+          <div className="w-full py-4 md:w-1/2 md:text-lg md:px-5 md:py-2 text-gray-600">
             <p>
               Our well qualified Ayurvedic physicians (Vaidyas) will give their
               opinion based on the information provided. Sometimes you may be
@@ -90,69 +90,94 @@ export default function Header() {
               ayurvedic preparations which you may order through us or buy it in
               your area.
             </p>
-            <button className="bg-primary-500 p-2 rounded hover:bg-primary-600 duration-200 text-white my-2">
-              Request Consultation{" "}
-            </button>
+            <Button
+              label="Request Consultation"
+              style="bg-primary-500 hover:bg-primary-600 text-white"
+            />
           </div>
         </div>
       </div>
-      {/*-----------------------------------------------------------Questions Part-------------------------------------------------  */}
+
       <div className="questions px-5 md:px-20 my-16">
         <div className="w-full">
-          <h2 className="text-2xl md:text-4xl font-semibold">
-            Frequently Asked Questions
-          </h2>
+          <Title title="Frequently Asked Questions" />
           <p className="text-gray-600 md:w-1/2 md:text-lg my-1">
-            Can’t find the answers you’re looking for? Please{" "}
+            Can’t find the answers you’re looking for? Please
             <a
               href="#"
-              className="font-semibold hover:text-blue-600 hover:underline "
+              className="font-semibold hover:text-blue-600 hover:underline"
             >
               chat with our friendly team.
             </a>
           </p>
         </div>
-        <div className="flex space-y-4  lg:space-x-4 lg:space-y-0 flex-col lg:flex-row my-6">
+        <div className="flex space-y-4 lg:space-x-4 lg:space-y-0 flex-col lg:flex-row my-6">
           <div className="lg:w-1/3">
-              <h2 className="text-lg text-primary-800">Is there a free trial available?</h2>
-              <p className="text-sm text-primary-500">Yes, you can try us for free for 30 days.</p>
+            <h2 className="text-lg text-primary-800">
+              Is there a free trial available?
+            </h2>
+            <p className="text-sm text-primary-500">
+              Yes, you can try us for free for 30 days.
+            </p>
           </div>
           <div className="lg:w-1/3">
-              <h2 className="text-lg text-primary-800">Can I change my plan later?</h2>
-              <p className="text-sm text-primary-500">Of Course, you can change your plan later.  Chat to our friendly team to find a solution that works for you.</p>
+            <h2 className="text-lg text-primary-800">
+              Can I change my plan later?
+            </h2>
+            <p className="text-sm text-primary-500">
+              Of Course, you can change your plan later. Chat to our friendly
+              team to find a solution that works for you.
+            </p>
           </div>
           <div className="lg:w-1/3">
-              <h2 className="text-lg text-primary-800">What is your cancellation policy</h2>
-              <p className="text-sm text-primary-500">We understand that things change. You can cancel your plan at any time and we’ll refund you the difference already paid.</p>
+            <h2 className="text-lg text-primary-800">
+              What is your cancellation policy
+            </h2>
+            <p className="text-sm text-primary-500">
+              We understand that things change. You can cancel your plan at any
+              time and we’ll refund you the difference already paid.
+            </p>
           </div>
         </div>
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 justify-center border rounded md:justify-between p-3 px-7 items-center border-primary-500">
-            <div>
-              <h2 className="font-semibold text-center md:text-left">Still have questions?</h2>
-              <p className="text-gray-500 text-center md:text-left">
-              Can’t find the answers you’re looking for? Please <a href="#" className="underline">chat with our friendly team</a>.
-              </p>
-            </div>
-            <div>
-              <button className="bg-primary-500 hover:bg-primary-600 duration-300 text-white p-2 px-4 rounded">Get In Touch</button>
-            </div>
+          <div>
+            <h2 className="font-semibold text-center md:text-left">
+              Still have questions?
+            </h2>
+            <p className="text-gray-500 text-center md:text-left">
+              Can’t find the answers you’re looking for? Please{" "}
+              <a href="#" className="underline">
+                chat with our friendly team
+              </a>
+              .
+            </p>
+          </div>
+          <div>
+            <button className="bg-primary-500 hover:bg-primary-600 duration-300 text-white p-2 px-4 rounded">
+              Get In Touch
+            </button>
+          </div>
         </div>
       </div>
-      {/*-----------------------------------------------------------Questions Part-------------------------------------------------  */}
+
       <div className="flex flex-col p-5 md:px-20 bg-primary-500">
         <div>
           <div className="flex flex-col text-center w-full">
-            <img src={logo} className="h-32 my-2" alt="ayurveda"/>
-            <p className="text-white my-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <img src={logo} className="h-32 my-2" alt="ayurveda" />
+            <p className="text-white my-4">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
           </div>
           <div className="w-1/2 my-5 text-white">
             <h4 className="text-sm">Follow Us On :</h4>
             <div className="text-4xl space-x-3 flex">
-            <Instagram/>
-            <Twitter/>
-            <Facebook/>
+              <Instagram />
+              <Twitter />
+              <Facebook />
             </div>
-            
           </div>
         </div>
         <div className="flex text-gray-500 justify-between bg-white rounded w-full p-3">
