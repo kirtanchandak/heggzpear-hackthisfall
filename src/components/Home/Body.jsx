@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import logo from "../../assets/logo.svg";
 import consultImg from "../../assets/consult-img.jpg";
 import { Instagram } from "../../icons/Instagram";
@@ -13,7 +12,11 @@ export default function Header() {
     <>
       <div className="flex flex-col md:flex-row items-center space-y-5 w-full p-4">
         <div className="w-1/2 flex  items-center justify-center">
-          <img src={logo} className="w-96 shadow-lg border rounded-full" />
+          <img
+            src={logo}
+            className="w-96 shadow-lg border rounded-full"
+            alt="logo"
+          />
         </div>
         <div className="w-full md:w-1/2">
           <div className="md:p-14">
@@ -161,17 +164,17 @@ export default function Header() {
       </div>
 
       <div className="flex flex-col p-5 md:px-20 bg-primary-500">
-        <div>
-          <div className="flex flex-col text-center w-full">
-            <img src={logo} className="h-32 my-2" alt="ayurveda" />
-            <p className="text-white my-4">
+        <div className="flex flex-col md:flex-row justify-between">
+          <div className="flex md:w-1/2 text-sm md:divide-x flex-col items-center md:flex-row text-center w-full">
+            <img src={logo} className="h-32 m-5" alt="ayurveda" />
+            <p className="text-white text-justify my-4 p-4">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
               type and scrambled it to make a type specimen book.
             </p>
           </div>
-          <div className="w-1/2 my-5 text-white">
+          <div className="w-fit my-5 text-white">
             <h4 className="text-sm">Follow Us On :</h4>
             <div className="text-4xl space-x-3 flex">
               <Instagram />
