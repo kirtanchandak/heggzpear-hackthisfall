@@ -7,6 +7,7 @@ import { FormModal } from "./dashboard/FormModal.jsx";
 import { NavLink, useNavigate } from "react-router-dom";
 import { MdiDashboard } from "../icons/MdiDashboard";
 import { MdiHistory } from "../icons/MdiHistory";
+import { Logout } from "../icons/Logout";
 import { MdiNotifications } from "../icons/MdiNotifications";
 import { MdiProfile } from "../icons/MdiProfile";
 import { User } from "../icons/User";
@@ -64,20 +65,29 @@ function Dashboard({ showModal }) {
                   </li>
                   <li>
                     <NavLink
-                      to="/history"
-                      className="flex p-2 rounded space-x-2 text-white hover:bg-white hover:text-primary-500 hover"
-                    >
-                      <MdiHistory className="text-2xl" />
-                      <h2 className="text-lg font-semibold">History</h2>
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink
                       to="/notifications"
                       className="flex p-2 rounded space-x-2 text-white hover:bg-white hover:text-primary-500 hover"
                     >
                       <MdiNotifications className="text-2xl" />
                       <h2 className="text-lg font-semibold">Notifications</h2>
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to="/profile"
+                      className="flex p-2 rounded space-x-2 text-white hover:bg-white hover:text-primary-500 hover"
+                    >
+                      <MdiProfile className="text-2xl" />
+                      <h2 className="text-lg font-semibold">Profile</h2>
+                    </NavLink>
+                  </li>
+                  <li className="fixed bottom-2 w-48">
+                    <NavLink
+                      to="/"
+                      className="flex justify-between items-center p-2 px-3 rounded space-x-2 text-white hover:bg-white bg-primary-400 hover:text-primary-500 hover"
+                    >
+                      <h2 className="text-lg font-semibold">Logout</h2>
+                      <Logout className="text-2xl" />
                     </NavLink>
                   </li>
                 </ul>

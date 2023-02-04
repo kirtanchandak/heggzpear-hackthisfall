@@ -67,7 +67,7 @@ export const FormModal = () => {
           style={customStyles}
           contentLabel="Example Modal"
         >
-          <div className="w-full h-[500px] md:h-[550px]">
+          <div className="w-full h-[520px] md:max-h-[550px]">
             <p className="border-b border-black p-5 mt-1">
               Based on the inputs below we will recommend you some best
               practices for your health. The recommendations provided are
@@ -244,7 +244,7 @@ export const FormModal = () => {
                       ></textarea>
                     </div>
 
-                    <div className="flex justify-end p-2 w-full">
+                    <div className="flex justify-end p-1 w-full">
                       <button
                         type="submit"
                         className="bg-primary-500 px-5 py-2 rounded-md text-white hover:bg-primary-600 duration-300"

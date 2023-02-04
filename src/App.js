@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router";
 import Login from "./components/Login";
 import SignUp from "./components/SignUp";
 import Dashboard from "./components/Dashboard";
-import History from "./components/History";
+import Profile from "./components/Profile";
 import Notification from "./components/Notification";
 
 import Home from "./components/Home";
@@ -18,7 +18,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/history" element={<History />} />
+        <Route path="/profile" element={<Profile />} />
         <Route path="/notifications" element={<Notification />} />
 
         <Route path="/form" element={<Form />} />
