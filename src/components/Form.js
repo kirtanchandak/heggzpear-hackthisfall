@@ -1,9 +1,11 @@
 import React from "react";
+import { getQuery } from "../Services/Queries";
 
 function Form() {
+  getQuery();
   return (
     <div>
-      <form action="" method="post">
+      <form action="" method="get">
         <label>Weight(in kg)</label>
         <input type="text" name="" />
         <label>Height(in cm)</label>
@@ -38,6 +40,7 @@ function Form() {
         <input type="text" name="" />
         <label>Any specific diseases or allergy you have:</label>
         <input type="text" name="" />
+        <button type="submit">Submit</button>
       </form>
     </div>
   );

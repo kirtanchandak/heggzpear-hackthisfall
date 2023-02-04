@@ -6,14 +6,17 @@ import { useEffect } from "react";
 import TodoForm from "./TodoForm";
 import Login from "./Login";
 import { getDiets } from "../Services/Diets";
+import { getQuery } from "../Services/Queries";
 
 function Dashboard() {
   const [navbar, setNavbar] = useState(false);
   const navigate = useNavigate();
   const [userDetails, setuserDetails] = useState();
-
   console.log(
-    getDiets().then((res) => console.log(res.documents[0].desciption))
+    getQuery().then((res) => {
+      console.log(res);
+    }),
+    "dsfs"
   );
   useEffect(() => {
     const getData = account.get();
