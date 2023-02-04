@@ -47,11 +47,15 @@ function SignUp() {
     <>
       <div className="bg-primary-500 flex flex-col lg:flex-row  h-full lg:h-screen p-3">
         <div className=" w-full lg:w-1/2 bg-grey-lighter flex rounded flex-col order-2 lg:order-1 bg-white">
-          <div className=" w-full lg:w-4/6 mx-auto flex-1 flex flex-col items-center justify-center px-5">
+          <div className="flex justify-start space-x-2 p-3 items-center">
+            <div className="bg-primary-500 h-9 w-9 rounded-full"></div>
+            <h2 className="text-xl font-bold font-Caveat">Ayurveda</h2>
+          </div>
+          <div className="w-full lg:w-4/6 mx-auto flex-1 flex flex-col items-center justify-center px-5">
             <h1 className="mb-8 text-3xl text-center font-semibold">
               Create Your Account
             </h1>
-            <div className="flex w-full space-x-2 p-2 shadow-md px-5 border rounded my-4 items-center cursor-pointer hover:shadow-lg">
+            <div className="flex w-full space-x-2 p-2 shadow-md px-5 border rounded my-4 items-center">
               <Google className="text-xl" />
               <h2
                 className="text-lg font-medium text-gray-600  "
@@ -136,7 +140,7 @@ function SignUp() {
           </div>
         </div>
         <div className=" w-full lg:w-1/2 order-1 flex items-center lg:order-2 justify-center">
-          <img src={logo} className=" w-48 my-5 lg:w-80" alt="logo" />
+          <img src={logo} className=" w-48 my-5 lg:w-80" />
         </div>
       </div>
     </>

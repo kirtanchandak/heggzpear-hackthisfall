@@ -63,13 +63,10 @@ module.exports = {
         },
         other: {},
       },
-    },
-    fontFamily: {
-      display: ["Plus Jakarta Sans", ...defaultTheme.fontFamily.sans],
-      body: ["Plus Jakarta Sans', sans-serif", ...defaultTheme.fontFamily.sans],
-    },
-    fontFamily: {
-      'Caveat': ['Caveat', 'cursive', ]
+      fontFamily: {
+        'content': ['Caveat', ...defaultTheme.fontFamily.sans ],
+        'display' : ['Poppins',  ...defaultTheme.fontFamily.sans]
+      },
     },
 
   },
