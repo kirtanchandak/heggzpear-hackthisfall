@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <>
       <div className="flex flex-col md:flex-row items-center space-y-5 w-full px-4 py-10">
-        <div className="w-1/2 flex  items-center justify-center">
+        <div className="w-1/2 flex items-center justify-center">
           <img
             src={logo}
             className="w-96 shadow-lg border rounded-full"
@@ -22,13 +22,11 @@ export default function Header() {
         <div className="w-full md:w-1/2">
           <div className="md:p-14">
             <h1 className="font-semibold text-2xl md:text-4xl my-2">
-              Lorem Ipsum
+              Welcome to Ayurveda!!
             </h1>
             <p className="text-justify text-base md:text-lg text-gray-600 mb-5">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
+              We're on a mission to spread awareness about Human Body and how
+              one can lead a healthy life by following them.
             </p>
             <Link
               to="/login"
@@ -108,7 +106,7 @@ export default function Header() {
         <div className="w-full">
           <Title title="Frequently Asked Questions" />
           <p className="text-gray-600 md:w-1/2 md:text-lg my-1">
-            Can’t find the answers you’re looking for? Please
+            Can’t find the answers you’re looking for? Please{" "}
             <a
               href="#"
               className="font-semibold hover:text-blue-600 hover:underline"
@@ -151,8 +149,8 @@ export default function Header() {
               Still have questions?
             </h2>
             <p className="text-gray-500 text-center md:text-left">
-              Can’t find the answers you’re looking for? Please{"  "}
-              <a href="#" className="underline">
+              Can’t find the answers you’re looking for? Please{" "}
+              <a href="#" className="underline hover:text-gray-900">
                 chat with our friendly team
               </a>
               .
@@ -171,10 +169,8 @@ export default function Header() {
           <div className="flex xl:w-1/2 text-sm md:divide-x flex-col items-center md:flex-row text-center w-full">
             <img src={logo} className="h-36 mr-5" alt="ayurveda" />
             <p className="text-white text-justify py-4 md:px-5">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
+              We're on a mission to spread awareness about Human Body and how
+              one can lead a healthy life by following them.
             </p>
           </div>
           <div className="w-fit my-5 text-white">
