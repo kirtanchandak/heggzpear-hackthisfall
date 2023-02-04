@@ -14,7 +14,7 @@ function Login() {
     e.preventDefault();
     try {
       await account.createEmailSession(user.email, user.password);
-      navigate("/profile");
+      navigate("/dashboard");
     } catch (error) {
       console.log(error);
     }
