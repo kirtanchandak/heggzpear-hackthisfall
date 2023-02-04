@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Welcome to Ayurveda
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div style="text-align: center;">
+<img src="./src/assets/logo.svg" height="250" width="250" alt="ayurveda" />
+</div>
 
-## Available Scripts
+We're on a mission to spread awareness about Human Body and how one can lead a healthy life by following them.
 
-In the project directory, you can run:
+## What is Ayurveda?
 
-### `npm start`
+Ayurveda, a natural system of medicine, originated in India more than 3,000 years ago. The term Ayurveda is derived from the Sanskrit words ayur (life) and veda (science or knowledge). Thus, Ayurveda translates to knowledge of life. Based on the idea that disease is due to an imbalance or stress in a person's consciousness, Ayurveda encourages certain lifestyle interventions and natural therapies to regain a balance between the body, mind, spirit, and the environment.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Roadmap
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- The user by default gets redirected to the **home page** of the site.
 
-### `npm test`
+<img src="./src/assets/hero-section-ay.jpg" alt="home-page" />
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- After successfully registration / login, the user will get redirected to the dashboard of the site.
 
-### `npm run build`
+<img src="./src/assets/register-page.jpg" alt="register-page" />
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<img src="./src/assets/login-page.jpg" alt="login-page" />
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<img src="./src/assets/dashboard-modal.jpg" alt="login-page" />
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Through dashboard user have to fill out the form shown in the modal. All the fields are mandatory to get the best results recommended and verified by the doctors.
 
-### `npm run eject`
+## Tech Stack
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
+![Appwrite](https://img.shields.io/badge/appwrite-%23C90A45.svg?style=for-the-badge&logo=appwrite&logoColor=white)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Contributors
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<!-- [**Parth Gajjar**](https://github.com/parth-vadgama)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+[**Jenil Gajjar**](https://github.com/JenilGajjar20)
 
-## Learn More
+[**Nayan Padshala**]() -->
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<a href="https://github.com/kirtanchandak/heggzpear-hackthisfall/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=kirtanchandak/heggzpear-hackthisfall" />
+</a>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<!-- Made with [contrib.rocks](https://contrib.rocks).   -->
