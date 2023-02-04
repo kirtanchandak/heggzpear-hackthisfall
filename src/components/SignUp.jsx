@@ -1,6 +1,6 @@
 import React from "react";
 import { account } from "../appwrite/appwrite";
-import { useNavigate } from "react-router-dom";
+import { Link, Route, useNavigate } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 import { useState } from "react";
 import logo from "../assets/logo.svg";
@@ -47,8 +47,8 @@ function SignUp() {
             <div className="bg-primary-500 h-9 w-9 rounded-full"></div>
             <h2 className="text-xl font-bold font-Caveat">Ayurveda</h2>
           </div>
-          <div class=" w-full lg:w-4/6 mx-auto flex-1 flex flex-col items-center justify-center px-5">
-            <h1 class="mb-8 text-3xl text-center font-semibold">Create Your Account</h1>
+          <div className=" w-full lg:w-4/6 mx-auto flex-1 flex flex-col items-center justify-center px-5">
+            <h1 className="mb-8 text-3xl text-center font-semibold">Create Your Account</h1>
             <div className="flex w-full space-x-2 p-2 shadow-md px-5 border rounded my-4 items-center">
               <Google className="text-xl" />
               <h2 className="text-lg font-medium text-gray-600">
@@ -62,7 +62,7 @@ function SignUp() {
             </div>
 
             <div className="w-full flex my-2 bg-gray-200 rounded-md p-3 items-center space-x-2">
-              <Account class="text-2xl text-gray-500"/>
+              <Account className="text-2xl text-gray-500"/>
             <input
               type="text"
               className="outline-none w-full bg-transparent"
@@ -78,7 +78,7 @@ function SignUp() {
             </div>
 
             <div className="w-full flex my-2 bg-gray-200 rounded-md p-3 items-center space-x-2">
-              <Gmail class="text-2xl text-gray-500"/>
+              <Gmail className="text-2xl text-gray-500"/>
             <input
               type="text"
               className="outline-none w-full bg-transparent"
@@ -95,7 +95,7 @@ function SignUp() {
             </div>
 
             <div className="w-full flex my-2 bg-gray-200 rounded-md p-3 items-center space-x-2">
-              <Password class="text-2xl text-gray-500"/>
+              <Password className="text-2xl text-gray-500"/>
             <input
               type="password"
               id="password"
@@ -112,18 +112,18 @@ function SignUp() {
             </div>
             <button
               type="submit"
-              class="w-full font-medium flex justify-between p-3 items-center  bg-primary-500 text-center py-3 rounded bg-green text-white hover:bg-primary-600 focus:outline-none my-1"
+              className="w-full font-medium flex justify-between p-3 items-center  bg-primary-500 text-center py-3 rounded bg-green text-white hover:bg-primary-600 focus:outline-none my-1"
               onClick={signUpUser}
             >
               <h2>Create Account</h2>
-              <Logout class="text-2xl"/>
+              <Logout className="text-2xl"/>
             </button>
               <div className="w-full my-4 flex justify-between">
                 <h2>Already have account?</h2>
-                <a href="/" className="flex text-lg font-medium text-blue-700 items-center space-x-2">
+                <Link to="/" className="flex text-lg font-medium text-blue-700 items-center space-x-2">
                   <h2>Sign In</h2>
-                  <Right class="text-lg"/>
-                </a>
+                  <Right className="text-lg"/>
+                </Link>
               </div>
               </div>
         </div>
