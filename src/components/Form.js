@@ -1,8 +1,6 @@
 import React from "react";
-import { getQuery } from "../Services/Queries";
 
 function Form() {
-  getQuery();
   return (
     <div>
       <form action="" method="get">

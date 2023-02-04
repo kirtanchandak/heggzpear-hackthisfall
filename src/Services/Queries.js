@@ -8,7 +8,7 @@ export const getQuery = () => {
     ])
     .then(
       function (res) {
-        console.log(res);
+        return res;
       },
       function (err) {
         console.log(err);
