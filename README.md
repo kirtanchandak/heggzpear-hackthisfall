@@ -39,3 +39,5 @@ Ayurveda, a natural system of medicine, originated in India more than 3,000 year
 <a href="https://github.com/kirtanchandak/heggzpear-hackthisfall/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=kirtanchandak/heggzpear-hackthisfall" />
 </a>
+
+[Parth Gajjar](https://github.com/parth-vadgama)
