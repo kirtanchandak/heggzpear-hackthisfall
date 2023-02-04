@@ -1,6 +1,6 @@
 import React from "react";
 import { account } from "../appwrite/appwrite";
-import { Link, Route, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 import { useState } from "react";
 import logo from "../assets/logo.svg";
@@ -41,14 +41,16 @@ function SignUp() {
   };
   return (
     <>
-    <div className="bg-primary-500 flex flex-col lg:flex-row  h-full lg:h-screen p-3">
-    <div className=" w-full lg:w-1/2 bg-grey-lighter flex rounded flex-col order-2 lg:order-1 bg-white">
+      <div className="bg-primary-500 flex flex-col lg:flex-row  h-full lg:h-screen p-3">
+        <div className=" w-full lg:w-1/2 bg-grey-lighter flex rounded flex-col order-2 lg:order-1 bg-white">
           <div className="flex justify-start space-x-2 p-3 items-center">
             <div className="bg-primary-500 h-9 w-9 rounded-full"></div>
             <h2 className="text-xl font-bold font-Caveat">Ayurveda</h2>
           </div>
           <div className=" w-full lg:w-4/6 mx-auto flex-1 flex flex-col items-center justify-center px-5">
-            <h1 className="mb-8 text-3xl text-center font-semibold">Create Your Account</h1>
+            <h1 className="mb-8 text-3xl text-center font-semibold">
+              Create Your Account
+            </h1>
             <div className="flex w-full space-x-2 p-2 shadow-md px-5 border rounded my-4 items-center">
               <Google className="text-xl" />
               <h2 className="text-lg font-medium text-gray-600">
@@ -62,53 +64,53 @@ function SignUp() {
             </div>
 
             <div className="w-full flex my-2 bg-gray-200 rounded-md p-3 items-center space-x-2">
-              <Account className="text-2xl text-gray-500"/>
-            <input
-              type="text"
-              className="outline-none w-full bg-transparent"
-              name="name"
-              placeholder="Name"
-              onChange={(e) => {
-                setUser({
-                  ...user,
-                  name: e.target.value,
-                });
-              }}
-            />
+              <Account className="text-2xl text-gray-500" />
+              <input
+                type="text"
+                className="outline-none w-full bg-transparent"
+                name="name"
+                placeholder="Name"
+                onChange={(e) => {
+                  setUser({
+                    ...user,
+                    name: e.target.value,
+                  });
+                }}
+              />
             </div>
 
             <div className="w-full flex my-2 bg-gray-200 rounded-md p-3 items-center space-x-2">
-              <Gmail className="text-2xl text-gray-500"/>
-            <input
-              type="text"
-              className="outline-none w-full bg-transparent"
-              id="name"
-              name="email"
-              placeholder="Email"
-              onChange={(e) => {
-                setUser({
-                  ...user,
-                  email: e.target.value,
-                });
-              }}
-            />
+              <Gmail className="text-2xl text-gray-500" />
+              <input
+                type="text"
+                className="outline-none w-full bg-transparent"
+                id="name"
+                name="email"
+                placeholder="Email"
+                onChange={(e) => {
+                  setUser({
+                    ...user,
+                    email: e.target.value,
+                  });
+                }}
+              />
             </div>
 
             <div className="w-full flex my-2 bg-gray-200 rounded-md p-3 items-center space-x-2">
-              <Password className="text-2xl text-gray-500"/>
-            <input
-              type="password"
-              id="password"
-              className="outline-none w-full bg-transparent"
-              name="password"
-              placeholder="Password"
-              onChange={(e) => {
-                setUser({
-                  ...user,
-                  password: e.target.value,
-                });
-              }}
-            />
+              <Password className="text-2xl text-gray-500" />
+              <input
+                type="password"
+                id="password"
+                className="outline-none w-full bg-transparent"
+                name="password"
+                placeholder="Password"
+                onChange={(e) => {
+                  setUser({
+                    ...user,
+                    password: e.target.value,
+                  });
+                }}
+              />
             </div>
             <button
               type="submit"
@@ -116,19 +118,22 @@ function SignUp() {
               onClick={signUpUser}
             >
               <h2>Create Account</h2>
-              <Logout className="text-2xl"/>
+              <Logout className="text-2xl" />
             </button>
-              <div className="w-full my-4 flex justify-between">
-                <h2>Already have account?</h2>
-                <Link to="/" className="flex text-lg font-medium text-blue-700 items-center space-x-2">
-                  <h2>Sign In</h2>
-                  <Right className="text-lg"/>
-                </Link>
-              </div>
-              </div>
+            <div className="w-full my-4 flex justify-between">
+              <h2>Already have account?</h2>
+              <Link
+                to="/"
+                className="flex text-lg font-medium text-blue-700 items-center space-x-2"
+              >
+                <h2>Sign In</h2>
+                <Right className="text-lg" />
+              </Link>
+            </div>
+          </div>
         </div>
         <div className=" w-full lg:w-1/2 order-1 flex items-center lg:order-2 justify-center">
-        <img src={logo} className=" w-48 my-5 lg:w-80"/>
+          <img src={logo} className=" w-48 my-5 lg:w-80" alt="logo" />
         </div>
       </div>
     </>
