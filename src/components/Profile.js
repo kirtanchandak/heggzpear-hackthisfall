@@ -6,12 +6,16 @@ import { useEffect } from "react";
 import Todos from "./Todos";
 import TodoForm from "./TodoForm";
 import Login from "./Login";
+import { getDiets } from "../Services/Diets";
 
 function Profile() {
   const [navbar, setNavbar] = useState(false);
   const navigate = useNavigate();
   const [userDetails, setuserDetails] = useState();
 
+  console.log(
+    getDiets().then((res) => console.log(res.documents[0].desciption))
+  );
   useEffect(() => {
     const getData = account.get();
     getData.then(
