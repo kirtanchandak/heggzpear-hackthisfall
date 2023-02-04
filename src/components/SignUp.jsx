@@ -1,6 +1,6 @@
 import React from "react";
 import { account } from "../appwrite/appwrite";
-import { Link, Route, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 import { useState } from "react";
 import logo from "../assets/logo.svg";
@@ -12,6 +12,10 @@ import { Logout } from "../icons/Logout";
 import { Right } from "../icons/Right";
 
 function SignUp() {
+  const googleAuth = (e) => {
+    e.preventDefault();
+    account.createOAuth2Session("google", "http://localhost:3000/dashboard");
+  };
   const navigate = useNavigate();
   const [user, setUser] = useState({
     name: "",
@@ -53,7 +57,10 @@ function SignUp() {
             </h1>
             <div className="flex w-full space-x-2 p-2 shadow-md px-5 border rounded my-4 items-center">
               <Google className="text-xl" />
-              <h2 className="text-lg font-medium text-gray-600">
+              <h2
+                className="text-lg font-medium text-gray-600  "
+                onClick={(e) => googleAuth(e)}
+              >
                 Sign Up with Google
               </h2>
             </div>

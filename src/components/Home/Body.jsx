@@ -145,9 +145,14 @@ export default function Header() {
             <img src={logo} className="h-32 my-2" alt="ayurveda"/>
             <p className="text-white my-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
           </div>
-          <div className="w-1/2 text-white">
-            <h4>Follow Us On :</h4>
-
+          <div className="w-1/2 my-5 text-white">
+            <h4 className="text-sm">Follow Us On :</h4>
+            <div className="text-4xl space-x-3 flex">
+            <Instagram/>
+            <Twitter/>
+            <Facebook/>
+            </div>
+            
           </div>
         </div>
         <div className="flex text-gray-500 justify-between bg-white rounded w-full p-3">
