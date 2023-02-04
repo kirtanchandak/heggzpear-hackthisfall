@@ -3,6 +3,7 @@ import Modal from "react-modal";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as yup from "yup";
 import { getQuery } from "../../Services/Queries";
+import { Close } from "../../icons/Close";
 
 const customStyles = {
   content: {
@@ -31,7 +32,7 @@ const submitSchema = yup.object().shape({
 
 export const DetailModal = ({ isopenModal }) => {
   let subtitle;
-  const [modalIsOpen, setIsOpen] = React.useState(false);
+  const [modalIsOpen, setIsOpen] = React.useState(isopenModal);
 
   const [diets, setDiets] = React.useState(null);
   function openModal() {
@@ -60,17 +61,24 @@ export const DetailModal = ({ isopenModal }) => {
   }
 
   return (
-    <div className={`${isopenModal ? "bg-gray-500 h-screen w-full" : ""}`}>
+    <div
+      className={`${
+        modalIsOpen && isopenModal ? "bg-gray-500 h-screen w-full" : ""
+      }`}
+    >
       <Modal
-        isOpen={isopenModal}
+        isOpen={modalIsOpen && isopenModal}
         onAfterOpen={afterOpenModal}
         onRequestClose={closeModal}
         style={customStyles}
         contentLabel="Example Modal"
       >
         <div className="w-full h-auto p-4 divide-y-2">
-          <div className="text-lg text-gray-400  p-4">
+          <div className="flex  items-center justify-between text-lg text-gray-400  p-4">
             <h2>Your Diet</h2>
+            <button onClick={closeModal}>
+              <Close className="text-2xl hover:text-black cursor-pointer" />
+            </button>
           </div>
           <div className="py-4 px-4">
             {diets ? (
