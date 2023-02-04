@@ -56,16 +56,6 @@ export default function Header() {
             and meditation.
           </p>
           <p>
-            Ayurveda, a natural system of medicine, originated in India more
-            than 3,000 years ago. The term Ayurveda is derived from the Sanskrit
-            words ayur (life) and veda (science or knowledge). Thus, Ayurveda
-            translates to knowledge of life. Based on the idea that disease is
-            due to an imbalance or stress in a person's consciousness, Ayurveda
-            encourages certain lifestyle interventions and natural therapies to
-            regain a balance between the body, mind, spirit, and the
-            environment.
-          </p>
-          <p>
             Ayurveda treatment starts with an internal purification process,
             followed by a special diet, herbal remedies, massage therapy, yoga,
             and meditation.
