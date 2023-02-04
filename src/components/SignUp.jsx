@@ -55,10 +55,10 @@ function SignUp() {
             <h1 className="mb-8 text-3xl text-center font-semibold">
               Create Your Account
             </h1>
-            <div className="flex w-full space-x-2 p-2 shadow-md px-5 border rounded my-4 items-center">
+            <div className="flex w-full space-x-2 p-2 shadow-md px-5 border rounded my-4 items-center cursor-pointer hover:shadow-lg">
               <Google className="text-xl" />
               <h2
-                className="text-lg font-medium text-gray-600  "
+                className="text-lg font-medium text-gray-600 "
                 onClick={(e) => googleAuth(e)}
               >
                 Sign Up with Google
@@ -140,7 +140,7 @@ function SignUp() {
           </div>
         </div>
         <div className=" w-full lg:w-1/2 order-1 flex items-center lg:order-2 justify-center">
-          <img src={logo} className=" w-48 my-5 lg:w-80" />
+          <img src={logo} className=" w-48 my-5 lg:w-80" alt="logo" />
         </div>
       </div>
     </>

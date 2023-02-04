@@ -1,17 +1,20 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import logo from "../../assets/logo.svg";
 import consultImg from "../../assets/consult-img.jpg";
-import {Instagram} from "../../icons/Instagram"
-import {Facebook} from "../../icons/Facebook"
-import {Twitter} from "../../icons/Twitter"
+import { Instagram } from "../../icons/Instagram";
+import { Facebook } from "../../icons/Facebook";
+import { Twitter } from "../../icons/Twitter";
 
 export default function Header() {
   return (
     <>
       <div className="flex flex-col md:flex-row items-center space-y-5 w-full p-4">
         <div className="w-1/2 flex  items-center justify-center">
-          <img src={logo} className="w-96 shadow-lg border rounded-full" />
+          <img
+            src={logo}
+            className="w-96 shadow-lg border rounded-full"
+            alt="logo"
+          />
         </div>
         <div className="w-full md:w-1/2">
           <div className="md:p-14">
@@ -114,43 +117,70 @@ export default function Header() {
         </div>
         <div className="flex space-y-4  lg:space-x-4 lg:space-y-0 flex-col lg:flex-row my-6">
           <div className="lg:w-1/3">
-              <h2 className="text-lg text-primary-800">Is there a free trial available?</h2>
-              <p className="text-sm text-primary-500">Yes, you can try us for free for 30 days.</p>
+            <h2 className="text-lg text-primary-800">
+              Is there a free trial available?
+            </h2>
+            <p className="text-sm text-primary-500">
+              Yes, you can try us for free for 30 days.
+            </p>
           </div>
           <div className="lg:w-1/3">
-              <h2 className="text-lg text-primary-800">Can I change my plan later?</h2>
-              <p className="text-sm text-primary-500">Of Course, you can change your plan later.  Chat to our friendly team to find a solution that works for you.</p>
+            <h2 className="text-lg text-primary-800">
+              Can I change my plan later?
+            </h2>
+            <p className="text-sm text-primary-500">
+              Of Course, you can change your plan later. Chat to our friendly
+              team to find a solution that works for you.
+            </p>
           </div>
           <div className="lg:w-1/3">
-              <h2 className="text-lg text-primary-800">What is your cancellation policy</h2>
-              <p className="text-sm text-primary-500">We understand that things change. You can cancel your plan at any time and we’ll refund you the difference already paid.</p>
+            <h2 className="text-lg text-primary-800">
+              What is your cancellation policy
+            </h2>
+            <p className="text-sm text-primary-500">
+              We understand that things change. You can cancel your plan at any
+              time and we’ll refund you the difference already paid.
+            </p>
           </div>
         </div>
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 justify-center border rounded md:justify-between p-3 px-7 items-center border-primary-500">
-            <div>
-              <h2 className="font-semibold text-center md:text-left">Still have questions?</h2>
-              <p className="text-gray-500 text-center md:text-left">
-              Can’t find the answers you’re looking for? Please <a href="#" className="underline">chat with our friendly team</a>.
-              </p>
-            </div>
-            <div>
-              <button className="bg-primary-500 hover:bg-primary-600 duration-300 text-white p-2 px-4 rounded">Get In Touch</button>
-            </div>
+          <div>
+            <h2 className="font-semibold text-center md:text-left">
+              Still have questions?
+            </h2>
+            <p className="text-gray-500 text-center md:text-left">
+              Can’t find the answers you’re looking for? Please{" "}
+              <a href="#" className="underline">
+                chat with our friendly team
+              </a>
+              .
+            </p>
+          </div>
+          <div>
+            <button className="bg-primary-500 hover:bg-primary-600 duration-300 text-white p-2 px-4 rounded">
+              Get In Touch
+            </button>
+          </div>
         </div>
       </div>
       {/*-----------------------------------------------------------Questions Part-------------------------------------------------  */}
       <div className="flex flex-col p-5 md:px-20 bg-primary-500">
         <div className="flex flex-col md:flex-row justify-between">
           <div className="flex md:w-1/2 text-sm md:divide-x flex-col items-center md:flex-row text-center w-full">
-            <img src={logo} className="h-32 m-5" alt="ayurveda"/>
-            <p className="text-white text-justify my-4 p-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <img src={logo} className="h-32 m-5" alt="ayurveda" />
+            <p className="text-white text-justify my-4 p-4">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
           </div>
           <div className="w-fit my-5 text-white">
             <h4 className="text-sm">Follow Us On :</h4>
             <div className="text-4xl space-x-3 flex">
-            <Instagram/>
-            <Twitter/>
-            <Facebook/>
+              <Instagram />
+              <Twitter />
+              <Facebook />
             </div>
           </div>
         </div>
