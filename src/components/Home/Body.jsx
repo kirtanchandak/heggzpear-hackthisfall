@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../../assets/logo.svg";
 import consultImg from "../../assets/consult-img.jpg";
+import { Link } from "react-router-dom";
 import { Instagram } from "../../icons/Instagram";
 import { Facebook } from "../../icons/Facebook";
 import { Twitter } from "../../icons/Twitter";
@@ -10,7 +11,7 @@ import Title from "../Title";
 export default function Header() {
   return (
     <>
-      <div className="flex flex-col md:flex-row items-center space-y-5 w-full p-4">
+      <div className="flex flex-col md:flex-row items-center space-y-5 w-full px-4 py-10">
         <div className="w-1/2 flex  items-center justify-center">
           <img
             src={logo}
@@ -23,22 +24,24 @@ export default function Header() {
             <h1 className="font-semibold text-2xl md:text-4xl my-2">
               Lorem Ipsum
             </h1>
-            <p className="text-justify text-base md:text-lg text-gray-600">
+            <p className="text-justify text-base md:text-lg text-gray-600 mb-5">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
               type and scrambled it to make a type specimen book.
             </p>
-            <Button
-              label="Login"
-              style="bg-primary-500 text-white hover:bg-primary-600"
-            />
+            <Link
+              to="/login"
+              className="p-2 px-9 duration-300 rounded bg-primary-500 text-white hover:bg-primary-600"
+            >
+              Login
+            </Link>
           </div>
         </div>
       </div>
-      <div className="ayurveda p-5 px-5 md:px-20">
+      <div className="ayurveda p-5 px-5 md:px-20 lg:py-10">
         <Title title="What is Ayurveda?" className="my-5" />
-        <div className="space-y-3 text-justify md:text-base text-gray-600">
+        <div className="space-y-3 text-justify md:text-base text-gray-600 pt-3">
           <p>
             Ayurveda, a natural system of medicine, originated in India more
             than 3,000 years ago. The term Ayurveda is derived from the Sanskrit
@@ -77,11 +80,11 @@ export default function Header() {
       </div>
       <div className="consultation my-5 px-5 md:px-20">
         <Title title="Free Online Consultations" className="my-5" />
-        <div className="flex flex-col md:flex-row">
+        <div className="flex flex-col items-start md:flex-row pt-3">
           <div className="w-full md:w-1/2">
             <img src={consultImg} className="" alt="doctor_img" />
           </div>
-          <div className="w-full py-4 md:w-1/2 md:text-lg md:px-5 md:py-2 text-gray-600">
+          <div className="w-full py-4 md:w-1/2 md:text-lg md:px-5 md:py-0 text-gray-600">
             <p>
               Our well qualified Ayurvedic physicians (Vaidyas) will give their
               opinion based on the information provided. Sometimes you may be
@@ -101,7 +104,7 @@ export default function Header() {
         </div>
       </div>
 
-      <div className="questions px-5 md:px-20 my-16">
+      <div className="questions px-5 md:px-20 my-8">
         <div className="w-full">
           <Title title="Frequently Asked Questions" />
           <p className="text-gray-600 md:w-1/2 md:text-lg my-1">
@@ -148,7 +151,7 @@ export default function Header() {
               Still have questions?
             </h2>
             <p className="text-gray-500 text-center md:text-left">
-              Can’t find the answers you’re looking for? Please{" "}
+              Can’t find the answers you’re looking for? Please{"  "}
               <a href="#" className="underline">
                 chat with our friendly team
               </a>
@@ -164,10 +167,10 @@ export default function Header() {
       </div>
 
       <div className="flex flex-col p-5 md:px-20 bg-primary-500">
-        <div className="flex flex-col md:flex-row justify-between">
-          <div className="flex md:w-1/2 text-sm md:divide-x flex-col items-center md:flex-row text-center w-full">
-            <img src={logo} className="h-32 m-5" alt="ayurveda" />
-            <p className="text-white text-justify my-4 p-4">
+        <div className="flex flex-col md:flex-row justify-between md:pb-10">
+          <div className="flex xl:w-1/2 text-sm md:divide-x flex-col items-center md:flex-row text-center w-full">
+            <img src={logo} className="h-36 mr-5" alt="ayurveda" />
+            <p className="text-white text-justify py-4 md:px-5">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
@@ -176,10 +179,16 @@ export default function Header() {
           </div>
           <div className="w-fit my-5 text-white">
             <h4 className="text-sm">Follow Us On :</h4>
-            <div className="text-4xl space-x-3 flex">
-              <Instagram />
-              <Twitter />
-              <Facebook />
+            <div className="text-4xl space-x-3 flex pt-2.5">
+              <a href="">
+                <Instagram className="border border-white rounded-full p-2 hover:bg-white hover:border-primary-500 hover:text-primary-500" />
+              </a>
+              <a href="">
+                <Twitter className="border border-white rounded-full p-2 hover:bg-white hover:border-primary-500 hover:text-primary-500" />
+              </a>
+              <a href="">
+                <Facebook className="border border-white rounded-full p-2 hover:bg-white hover:border-primary-500 hover:text-primary-500" />
+              </a>
             </div>
           </div>
         </div>
