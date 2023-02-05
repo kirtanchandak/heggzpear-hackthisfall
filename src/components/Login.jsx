@@ -12,7 +12,10 @@ import { Right } from "../icons/Right";
 function Login() {
   const googleAuth = (e) => {
     e.preventDefault();
-    account.createOAuth2Session("google", "http://localhost:3000/dashboard");
+    account.createOAuth2Session(
+      "google",
+      "https://heggzpear-hackthisfall-9gfjt4cbd-kirtanchandak.vercel.app/dashboard"
+    );
   };
   const navigate = useNavigate();
   const [user, setUser] = useState({

@@ -6,7 +6,6 @@ import Login from "./Login";
 import { FormModal } from "./dashboard/FormModal.jsx";
 import { NavLink, useNavigate } from "react-router-dom";
 import { MdiDashboard } from "../icons/MdiDashboard";
-import { MdiHistory } from "../icons/MdiHistory";
 import { Logout } from "../icons/Logout";
 import { MdiNotifications } from "../icons/MdiNotifications";
 import { MdiProfile } from "../icons/MdiProfile";
