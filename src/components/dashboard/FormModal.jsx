@@ -96,7 +96,7 @@ export const FormModal = () => {
                 <Form className="p-4 space-y-4">
                   <div className="flex flex-wrap justify-evenly md:space-x-2">
                     <div className="flex w-full md:w-52 flex-col">
-                      <label htmlFor="weight">weight</label>
+                      <label htmlFor="weight">Weight</label>
                       <Field
                         type="number"
                         name="weight"
@@ -111,7 +111,7 @@ export const FormModal = () => {
                       />
                     </div>
                     <div className="flex w-full md:w-52 flex-col">
-                      <label htmlFor="height">height</label>
+                      <label htmlFor="height">Height</label>
                       <Field
                         type="number"
                         name="height"
@@ -126,7 +126,7 @@ export const FormModal = () => {
                       />
                     </div>
                     <div className="flex w-full md:w-52 flex-col">
-                      <label htmlFor="age">age</label>
+                      <label htmlFor="age">Age</label>
                       <Field
                         type="number"
                         name="age"
@@ -141,7 +141,7 @@ export const FormModal = () => {
                       />
                     </div>
                     <div className="flex w-full md:w-52 flex-col">
-                      <label htmlFor="gender">gender</label>
+                      <label htmlFor="gender">Gender</label>
                       <select
                         name="gender"
                         id="gender"
@@ -173,8 +173,10 @@ export const FormModal = () => {
                         onChange={handleChange}
                       >
                         <option value="">--Select--</option>
-                        <option value="veg">Male</option>
-                        <option value="non-veg">Female</option>
+                        <option value="veg">Veg</option>
+                        <option value="non-veg">Non-Veg</option>
+                        <option value="non-veg">Vegan</option>
+                        <option value="non-veg">Eggetarian</option>
                       </select>
                       <ErrorMessage
                         component="div"
@@ -192,7 +194,8 @@ export const FormModal = () => {
                         onChange={handleChange}
                       >
                         <option value="">--Select--</option>
-                        <option value="alchohol">alchohol</option>
+                        <option value="alchohol">Alchohol</option>
+                        <option value="alchohol">Smoking</option>
                       </select>
                       <ErrorMessage
                         component="div"
@@ -210,7 +213,9 @@ export const FormModal = () => {
                         onChange={handleChange}
                       >
                         <option value="">--Select--</option>
-                        <option value="alchohol">alchohol</option>
+                        <option value="alchohol">Low</option>
+                        <option value="alchohol">Normal</option>
+                        <option value="alchohol">High</option>
                       </select>
                       <ErrorMessage
                         component="div"
@@ -225,7 +230,7 @@ export const FormModal = () => {
                         name="dob"
                         id="dob"
                         className="bg-gray-200 rounded p-2 outline-none"
-                        placeholder="In Kg"
+                        placeholder="Birthday"
                       />
                       <ErrorMessage
                         component="div"
