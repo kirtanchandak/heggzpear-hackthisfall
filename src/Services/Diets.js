@@ -2,7 +2,7 @@ import { databases } from "../appwrite/appwrite";
 
 export const getDiets = () => {
   return databases
-    .listDocuments("63dd97fcc07889de33ba", "63dd9816dbb6d29091ae")
+    .listDocuments("63def5cb19e2e8eeca7b", "63def5d2418422aed44a")
     .then(
       function (response) {
         return response;

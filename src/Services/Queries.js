@@ -3,7 +3,7 @@ import { Query } from "appwrite";
 
 export const getQuery = () => {
   return databases
-    .listDocuments("63dd97fcc07889de33ba", "63dd9816dbb6d29091ae", [
+    .listDocuments("63def5cb19e2e8eeca7b", "63def5d2418422aed44a", [
       Query.limit(Math.floor(Math.random() * 10) + 1),
     ])
     .then(
