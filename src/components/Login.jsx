@@ -14,7 +14,7 @@ function Login() {
     e.preventDefault();
     account.createOAuth2Session(
       "google",
-      "https://heggzpear-hackthisfall-9gfjt4cbd-kirtanchandak.vercel.app/dashboard"
+      "https://heggzpear-hackthisfall.vercel.app/dashboard"
     );
   };
   const navigate = useNavigate();
