@@ -84,6 +84,7 @@ function Dashboard({ showModal }) {
                     <button
                       className="flex justify-between items-center p-2 px-3 rounded space-x-2 text-white hover:bg-white bg-primary-400 hover:text-primary-500 hover"
                       onClick={handleLogOut}
+                      navigate="/"
                     >
                       <h2 className="text-lg font-semibold">Logout</h2>
                       <Logout className="text-2xl" />

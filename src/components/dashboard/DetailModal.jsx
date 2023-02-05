@@ -84,7 +84,7 @@ export const DetailModal = ({ isopenModal }) => {
             {diets ? (
               <ul>
                 {Object.keys(diets.documents).map((item, index) => (
-                  <li key={index}>{diets.documents[index].desciption}</li>
+                  <li key={index}>{diets.documents[index].description}</li>
                 ))}
               </ul>
             ) : (
