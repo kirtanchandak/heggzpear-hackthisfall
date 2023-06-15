@@ -33,9 +33,16 @@ git clone https://github.com/kirtanchandak/heggzpear-hackthisfall.git
 cd heggzpear-hackthisfall
 npm install
 ```
-### Open in VS code and run the application
+### Open the folder in VS code -
 ```sh
 code .
+```
+### Create a .env file and necessary credentials 
+```sh
+APPWRITE_KEY = ""
+```
+### Run the application - 
+```sh
 npm start
 ```
 
