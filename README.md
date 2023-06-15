@@ -1,7 +1,7 @@
 # Welcome to Ayurveda
 
 <div style="text-align: center;">
-<img src="./src/assets/logo.svg" height="250" width="250" alt="ayurveda" />
+<img src="https://ik.imagekit.io/kirtanchandak/ayuveda/logo.svg?updatedAt=1686827389540" height="250" width="250" alt="ayurveda" />
 </div>
 
 We're on a mission to spread awareness about Human Body and how one can lead a healthy life by following them.
@@ -12,19 +12,18 @@ Ayurveda, a natural system of medicine, originated in India more than 3,000 year
 
 ## Roadmap
 
-- The user by default gets redirected to the **home page** of the site.
+#### The user by default gets redirected to the **home page** of the site.
 
-<img src="./src/assets/hero-section-ay.jpg" alt="home-page" />
+<img src="https://ik.imagekit.io/kirtanchandak/ayuveda/Screenshot_2023-04-06_185242.png?updatedAt=1680787400521" alt="home-page" />
 
-- After successfully registration / login, the user will get redirected to the dashboard of the site.
+#### After successfully registration / login, the user will get redirected to the dashboard of the site.
 
-<img src="./src/assets/register-page.jpg" alt="register-page" />
+<img src="https://ik.imagekit.io/kirtanchandak/ayuveda/register-page.jpg?updatedAt=1686827192109" alt="register-page" />
 
-<img src="./src/assets/login-page.jpg" alt="login-page" />
+#### Through the dashboard, users must fill out the form shown in the modal. All the fields are mandatory to get the best results recommended and verified by the doctors.
+<img src="https://ik.imagekit.io/kirtanchandak/ayuveda/dashboard-modal.jpg?updatedAt=1686827196065" alt="dashboard-page" />
 
-<img src="./src/assets/dashboard-modal.jpg" alt="login-page" />
 
-- Through the dashboard, users must fill out the form shown in the modal. All the fields are mandatory to get the best results recommended and verified by the doctors.
 
   ## Installations Guidelines:
 
