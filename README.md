@@ -24,7 +24,21 @@ Ayurveda, a natural system of medicine, originated in India more than 3,000 year
 
 <img src="./src/assets/dashboard-modal.jpg" alt="login-page" />
 
-- Through dashboard user have to fill out the form shown in the modal. All the fields are mandatory to get the best results recommended and verified by the doctors.
+- Through the dashboard, users must fill out the form shown in the modal. All the fields are mandatory to get the best results recommended and verified by the doctors.
+
+  ## Installations Guidelines:
+
+```sh
+git clone https://github.com/kirtanchandak/heggzpear-hackthisfall.git 
+cd heggzpear-hackthisfall
+npm install
+```
+### Open in VS code and run the application
+```sh
+code .
+npm start
+```
+
 
 ## Tech Stack
 
